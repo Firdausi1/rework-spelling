@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spelling Game</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 p-6">
+    <div class="max-w-xl mx-auto text-center">
+      <h1 class="text-3xl font-bold mb-4">Word Spelling Game</h1>
+      <div id="timer" class="mt-4 text-red-600 font-bold">
+        Time Left: <span id="timeLeft">60</span> seconds
+      </div>
+      <div id="imageContainer" class="mb-4">
+        <img
+          id="currentImage"
+          src=""
+          alt="Image to spell"
+          class="w-48 h-48 mx-auto mb-4"
+        />
+      </div>
+      <div id="inputContainer" class="flex justify-center space-x-2 mb-4"></div>
+      <p class="hidden mb-2 text-red-500" id="tryAgain">Incorrect, try again</p>
+      <div id="alphabetContainer" class="grid grid-cols-6 gap-2"></div>
+    </div>
+
+    <div class="max-w-xl mx-auto mt-8 hidden" id="scoreContainer">
+      <h2 class="text-xl font-bold" id="score">Score</h2>
+      <ul id="report" class="list-disc pl-5"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
